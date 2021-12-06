@@ -1,0 +1,143 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  display: flex;
+  font-family: system-ui;
+}
+
+
+/* header */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+.nodes-container {
+  width: 70vw;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.device-line {
+  width: calc(70% - 55px);
+  height: 4px;
+  background: black; /* this is for lines on the dynamic side */
+  position: absolute;
+  left: 55px;
+  top: 200px;
+}
+
+.node {
+  width: 13.5vw;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 140px;
+  position: relative;
+}
+
+.node img {
+  max-width: 7vw;
+  margin: 0px auto auto;
+}
+.nodes-container .node img{
+  margin: auto;
+}
+
+.node .data {
+  text-align: center;
+  display: none;
+  background: #5ccdf7;
+  border-radius: 12px;
+  padding: 4px 24px;
+  width: fit-content;
+  margin: auto;
+}
+
+.show .data {
+  display: block;
+  position: absolute;
+  bottom: -32px;
+  left: calc(50% - 86px);
+  z-index: 10;
+}
+
+.server-containers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 12px;
+  width: 30%;
+}
+
+.line {
+  width: 4px;
+  background: orange;
+  margin: 0px;
+  position: relative;
+}
+
+.slines {
+  height: 4px;
+  background: orange;
+  position: absolute;
+  z-index: -1;
+  left: 0px;
+  width: 13vw;
+}
+
+.nlines {
+  background: orange;
+  position: absolute;
+  z-index: -1;
+  width: 66vw;
+  height: 4px;
+  right: 0px;
+  top: 110px;
+}
+
+.l-1 {
+  top: 137px;
+}
+.l-2 {
+  top: 277px;
+}
+.l-3 {
+  top: 417px;
+}
+.l-4 {
+  top: 557px;
+}
+.l-5 {
+  top: 697px;
+}
+.l-6 {
+  top: 837px;
+}
+.l-7 {
+  top: 922px;
+}
+.l-8 {
+  top: 1062px;
+}
+
+
+.pcline {
+  width: 4px;
+  height: 50px;
+  top: 86px;
+  left: 50%;
+  background: black;
+  position: absolute;
+  z-index: -3;
+}

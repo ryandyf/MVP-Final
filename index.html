@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Network of Nodes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>Network Infrastructure Services Utility</h1>
+    <p>Naval Undersea Warfare Center Division at Newport, Rhode Island</p>
+  </div>
+
+  <div class="container">
+    <div id="devices" class="nodes-container">
+    </div>
+    <div class="line">
+      <div class="slines l-1"></div>
+      <div class="slines l-2"></div>
+      <div class="slines l-3"></div>
+      <div class="slines l-4"></div>
+      <div class="slines l-5"></div>
+      <div class="slines l-6"></div>
+      <div class="slines l-7"></div>
+      <div class="slines l-8"></div>
+    </div>
+    <div class="server-containers">
+      <div class="server-containers">
+        <div onclick="toggleView(this)" class="node">
+          <img src="/images/server-icon.png">
+          <div class="data">
+            System Management Server(Contains NISU)
+            <br>
+            192.168.1.1
+          </div>
+
+        </div>
+        <div onclick="toggleView(this)" class="node">
+          <img src="/images/server-icon.png">
+          <div class="data">
+            vGPU Server 2
+            <br>
+            192.168.1.2
+          </div>
+
+        </div>
+        <div onclick="toggleView(this)" class="node">
+          <img src="/images/server-icon.png">
+          <div class="data">
+            vGPU Server 1
+            <br>
+            192.168.1.3
+          </div>
+
+        </div>
+        <div onclick="toggleView(this)" class="node">
+          <img src="/images/server-icon.png">
+          <div class="data">
+            VM Server 2
+            <br>
+            192.168.1.4
+          </div>
+
+        </div>
+        <div onclick="toggleView(this)" class="node">
+          <img src="/images/server-icon.png">
+          <div class="data">
+            VM Server 1
+            <br>
+            192.168.1.5
+          </div>
+
+        </div>
+        <div onclick="toggleView(this)" class="node">
+          <img src="/images/server-icon.png">
+          <div class="data">
+            NAS
+            <br>
+            192.168.1.6
+          </div>
+
+        </div>
+        <div onclick="toggleView(this)" class="node">
+          <img src="/images/switch-icon.png">
+          <div class="data">
+            L3 Switch 2
+            <br>
+            192.168.1.1
+          </div>
+
+        </div>
+        <div onclick="toggleView(this)" class="node">
+          <img src="/images/switch-icon.png">
+          <div class="data">
+            L3 Switch 1
+            <br>
+            192.168.1.2
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- <svg width='200' height="8" >
+        <line x1="0" y1="4" x2="200" y2="4" stroke="red"></line>
+      </svg>  -->
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
